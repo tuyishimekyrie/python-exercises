@@ -1,14 +1,14 @@
 import random
 
+while True:
+ value = input("Roll the dice (Y/N): ").lower()
 
-stat = True
-while stat:
- inputs = input("Roll the dice (Y/N): ")
- value = inputs.lower()
  if value == "y":
-    print(f"({ random.randint(1,6)}, {random.randint(1,6)})")
+    die1 = random.randint(1,6)
+    die2 = random.randint(1,6)
+    print(f"({ die1}, {die2})")
  elif value == "n":
     print("Thanks for playing!")
-    stat = False
+    break
  else:
     print("Invalid choice!")
