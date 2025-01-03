@@ -1,8 +1,4 @@
-tasks = [
-    { "id":1,"task": "Buy Food"}
-    ,
-    {"id": 2,"task":"Clean House"}
-    ]
+tasks = []
 def display_input():
     print("1. view tasks")
     print("2. add task")
@@ -11,9 +7,9 @@ def display_input():
 
 def get_user_input():
     choice = input("Enter your choice: ")
+    choice_list = ("1", "2", "3", "4")
     while True:
-        if choice.isdigit():
-        #  print(choice)
+        if choice in choice_list:
          return choice
         else:
          print("Invalid input. Please enter a number.")
